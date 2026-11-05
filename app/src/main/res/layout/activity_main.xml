@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="16dp">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:id="@+id/btnMenu" android:layout_width="32dp" android:layout_height="32dp"
+            android:layout_alignParentStart="true" android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_menu_sort_by_size"/>
+        <ImageView android:layout_width="36dp" android:layout_height="36dp"
+            android:layout_centerInParent="true" android:src="@drawable/logo"/>
+        <ImageView android:id="@+id/btnProfile" android:layout_width="32dp" android:layout_height="32dp"
+            android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+            android:src="@drawable/avatar"/>
+    </RelativeLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="С возвращением, Эмиль!" android:textColor="@color/white_text"
+        android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="16dp"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="каким ты себя ощущаешь сегодня?" android:textColor="@color/white_text"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginTop="16dp"
+        android:weightSum="4">
+        <ImageView android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:src="@drawable/mood1"/>
+        <ImageView android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:src="@drawable/mood2"/>
+        <ImageView android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:src="@drawable/mood3"/>
+        <ImageView android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:src="@drawable/mood4"/>
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/cardImage1"
+                android:layout_width="130dp"
+                android:layout_height="110dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_yoga" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/cardImage1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Хотельная банка"
+                    android:textColor="#1B2626"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Краткое описание блока с двумя строчками"
+                    android:textColor="#1B2626"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnListen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/bg_dark"
+                    android:text="подробнее"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    app:cornerRadius="8dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/cardImage2"
+                android:layout_width="130dp"
+                android:layout_height="110dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/card_heart" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/cardImage2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Затаённое благо"
+                    android:textColor="#1B2626"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Краткое описание блока с двумя строчками"
+                    android:textColor="#1B2626"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/bg_dark"
+                    android:text="подробнее"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    app:cornerRadius="8dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
+</ScrollView>
